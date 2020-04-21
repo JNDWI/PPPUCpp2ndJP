@@ -6,7 +6,7 @@ int main()
 	char c{};
 	constexpr char end = '|';
 
-	cout << "Please enter 2 integer values.if you want to quit,type | to exit.: ";
+	cout << "Please enter 2 floating point values.if you want to quit,type | to exit.: ";
 	while (cin >> c && c != end) {
 		cin.putback(c);
 		if (cin >> a >> b) {
@@ -35,7 +35,7 @@ int main()
 			}
 			cout << "Please dont enter invalid value,try again: \n";
 		}
-		cout << "Please enter 2 integer value.if you want to quit,type | to exit.: ";
+		cout << "Please enter 2 floating point value.if you want to quit,type | to exit.: ";
 	}
 	return 0;
 }
