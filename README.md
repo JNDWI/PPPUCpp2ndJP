@@ -4,8 +4,8 @@
 ### 概要<br>
 本書に書かれている問題,**「TRY THIS」**,**「ドリル」**,**「練習問題」** の解答を載せています．
 ### 詳細<br>
-各セクションの問題の解答です，//コメントでセクションに出ていないわからない文法を補足しています．ページ番号_問題タイプ_ナンバー.cppでファイル名を付けています．<br>
-載せている解答は下記の海外の方が作成した解答を一部参考にしています．<br>1 https://github.com/0p3r4t4/PPPUCPP2nd<br>2 https://github.com/Jtaim/Programming-Principles-and-Practice-Using-Cpp<br>
+各セクションの問題の解答です，//コメントである程度補足をしています．ページ番号_問題タイプ_ナンバー.cppでファイル名を付けています．<br>
+載せている解答は下記の海外の方が作成した解答を一部参考にしています．<br>1 https://github.com/0p3r4t4/PPPUCPP2nd<br>2 https://github.com/Jtaim/Programming-Principles-and-Practice-Using-Cpp
 ### Library<br>
 http://www.stroustrup.com/Programming/PPP2code/std_lib_facilities.h
 ### 最後に<br>
