@@ -10,7 +10,7 @@ int main()
 	while (cin >> c && c != end) {
 		cin.putback(c);
 		if (cin >> a >> b) {
-			double d = abs(a - b);  //abs関数(p1156)
+			double d = abs(a - b);  //abs関数(p1156を参照)
 			cout << "Entered numbers is " << a << ' ' << b << '\n';
 			if (a < b) {
 				cout << "the smaller value is: " << a << '\n';
