@@ -10,7 +10,7 @@ int main()
 	while (cin >> c && c != end) {
 		cin.putback(c);
 		if (cin >> a >> b) {
-			double d = abs(a - b);  //aとbの差の絶対値を設定
+			double d = abs(a - b);  //abs関数:aとbの差の絶対値を設定
 			cout << "Entered numbers is " << a << ' ' << b << '\n';
 			if (a < b) {
 				cout << "the smaller value is: " << a << '\n';
