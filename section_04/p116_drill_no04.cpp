@@ -1,36 +1,40 @@
-﻿#include "../../std_lib_facilities.h"
+#include "../../std_lib_facilities.h"
 
 int main()
 {
-	double a, b;
-	char c{};
-	constexpr char end = '|';
+	double val1{ 0 };			//doubleに書き換え
+	double val2{ 0 };			//	   〃
+	char empty;
+	constexpr char end_mark = '|';
+	string user_prompt = { "Enter valid 2 int number, " + string{end_mark} +" to exit: --->" };
 
-	cout << "Please enter 2 floating point values.if you want to quit,type | to exit.: ";
-	while (cin >> c && c != end) {  //双方の条件がそろった場合ループを行う(trueの場合)
-		cin.putback(c);  //cをストリームに戻し，次に読み込む文字にする(p1146を参照)
-		if (cin >> a >> b) {
-			cout << "Entered numbers is " << a << ' ' << b << '\n';
-			if (a < b) {
-				cout << "the smaller value is: " << a << '\n';
-				cout << "the larger value is: " << b << "\n";
+	cout << user_prompt << '\n';
+	while (cin >> empty && empty != end_mark) {
+		cin.putback(empty);
+		if (cin >> val1 >> val2) {
+			if (val1 < val2) {
+				cout << "the smallest value is: " << val1 << '\n'
+					<< "the largest value is : " << val2 << '\n';
 			}
-			else if (a == b) {
+			else if (val1 == val2) {
 				cout << "the numbers are equal\n";
 			}
 			else {
-				cout << "the smaller value is: " << b << '\n';
-				cout << "the larger value is: " << a << "\n";
+				cout << "the smallest value is: " << val2 << '\n'
+					<< "the largest value is : " << val1 << '\n';
 			}
 		}
-		else {
-			cin >> c;
-			if (c == end) {
-				break;
-			}
-			cout << "Please dont enter invalid value,try again: \n";
+		else if (cin >> empty && empty == end_mark) {
+			break;
 		}
-		cout << "Please enter 2 floating point value.if you want to quit,type | to exit.: ";
+		cout << user_prompt << '\n';
 	}
-	return 0;
 }
+
+/*
+１	whileループで構成されたプログラムを作成する．whileループではループを繰り返すたびに int 型の値を2つ読み込み，それらを出力する．
+	'|'が入力されたらプログラムを終了する．⏎
+２	"the smallest value is: "に続いて小さいほうの数字をかき出し，"the larger value is: "に続いて大きいほうの値を書き出すように変更する．⏎
+３	2つの数字が等しい場合に（のみ），"the numbers are equal"行をかき出すように変更する．⏎
+４	int の代わりに doubleを使用するように変更する．⏎
+*/
