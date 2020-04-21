@@ -33,6 +33,5 @@ int main()
 		}
 		cout << "Please enter 2 integer value.if you want to quit,type | to exit.: ";
 	}
-
 	return 0;
 }
