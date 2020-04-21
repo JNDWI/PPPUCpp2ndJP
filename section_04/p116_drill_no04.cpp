@@ -6,7 +6,7 @@ int main()
 	char c{};
 	constexpr char end = '|';
 
-	cout << "Please enter 2 integer values.if you want to quit,type | to exit.: ";
+	cout << "Please enter 2 floating point values.if you want to quit,type | to exit.: ";
 	while (cin >> c && c != end) {  //双方の条件がそろった場合ループを行う(trueの場合)
 		cin.putback(c);  //cをストリームに戻し，次に読み込む文字にする(p1146を参照)
 		if (cin >> a >> b) {
@@ -30,7 +30,7 @@ int main()
 			}
 			cout << "Please dont enter invalid value,try again: \n";
 		}
-		cout << "Please enter 2 integer value.if you want to quit,type | to exit.: ";
+		cout << "Please enter 2 floating point value.if you want to quit,type | to exit.: ";
 	}
 	return 0;
 }
