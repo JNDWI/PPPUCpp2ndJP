@@ -9,18 +9,19 @@ const vector<string> valid_unit = { "cm","m","in","ft" };			//有効な距離単
 string near_equal(double val1, double val2, double approximation_value)
 {
 	if (abs(val1 - val2) < approximation_value)
-		return string{ "the numbers are almost equal\n" };
+		return "the numbers are almost equal\n";
 	else
-		return string{ "" };
+		return "";
 }
 
-int block_invalid_unit(vector<string> valid_unit, string dist_unit )
+bool block_invalid_unit(string dist_unit)
 {
-	for (int i = 0; valid_unit.size(); ++i) {
+	bool flag = false;
+	for (int i = 0; i < valid_unit.size(); ++i) {
 		if (dist_unit == valid_unit[i])
-			return 0;
+			flag = true;
 	}
-	return 1;
+	return flag;
 }
 
 int main()
@@ -28,42 +29,35 @@ int main()
 	double val1{ 0 };
 	double max{ 0 };
 	double min{ 0 };
-	string dist_unit{};
+	string dist_unit;
 	char empty;
 	int count{ 0 };
 	constexpr char end_mark = '|';
-	string user_prompt = { "Enter valid a floating point number and distance unit, " + string{end_mark} +" to exit: --->" };
+	const string user_prompt = "Enter valid a floating point number and distance unit, " + string{end_mark} + " to exit: --->";
 
-	cout << user_prompt << '\n';
+	cout << user_prompt << "\n";
 	while (cin >> empty && empty != end_mark) {
 		cin.putback(empty);
-		if (cin >> val1 >> dist_unit) {			//dist_unitを追加
-			if (0 == block_invalid_unit(valid_unit, dist_unit)) {
-				if (count == 0) {
-					cout << val1 << " the smallest and largest so far\n";
-					max = val1;
-					min = val1;
-				}
-				else if (count > 0) {
-					if (val1 <= min) {
-						cout << val1 << " the smallest so far\n";
-						min = val1;
-					}
-					else if (val1 >= max) {
-						cout << val1 << " the largest so far\n";
-						max = val1;
-					}
-				}
-				else {
-					break;
-				}
-				++count;
+		cin >> val1 >> dist_unit;			//dist_unitを追加
+		if (block_invalid_unit(dist_unit)) {
+			if (count == 0) {
+				cout << val1 << " the smallest and largest so far\n";
+				max = min = val1;
 			}
 			else
-				cout << "INVALID VALUE!!!\n";
-		}
-		else if (cin >> empty && empty == end_mark) {
-			break;
+			{
+				if (val1 <= min) {
+					cout << val1 << " the smallest so far\n";
+					min = val1;
+				}
+				else if (val1 >= max) {
+					cout << val1 << " the largest so far\n";
+					max = val1;
+				}
+			}
+			++count;
+		}else{
+			cout << "INVALID VALUE!!!\n";
 		}
 		cout << user_prompt << '\n';
 	}
@@ -75,7 +69,7 @@ int main()
 ２	"the smallest value is: "に続いて小さいほうの数字をかき出し，"the larger value is: "に続いて大きいほうの値を書き出すように変更する．⏎
 ３	2つの数字が等しい場合に（のみ），"the numbers are equal"行をかき出すように変更する．⏎
 ４	int の代わりに doubleを使用するように変更する．⏎
-５	2つの数字の差が1.0/100見なんである場合に，どちらの数字が大きいかをかき出した後，"the numbers is almost equal"と書き出すように変更する．⏎
+５	2つの数字の差が1.0/100未満である場合に，どちらの数字が大きいかをかき出した後，"the numbers is almost equal"と書き出すように変更する．⏎
 ６	ループ本体を書き換え，double　型の値を一度に1つずつ読み込むように変更する．これまでに読み込んだ値のうち最も大きい値と最も小さい値を追跡するための
 	2つの変数を定義する．ループを繰り返すたびに，入力された値をかき出す．その値がそれまでに入力された中で最も小さい場合は数字に続いて"the smallest
 	so far"を書き出し，最も大きい場合は数字に続いて"the largest so far"を書き出す．⏎
