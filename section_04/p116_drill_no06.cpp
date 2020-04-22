@@ -13,7 +13,6 @@ string near_equal(double val1, double val2, double approximation_value)
 int main()
 {
 	double val1{ 0 };
-	double val2{ 0 };								//今回は使わない
 	double max{ 0 };			//最大値追跡用変数
 	double min{ 0 };			//最小値追跡用変数
 	char empty;
