@@ -23,7 +23,7 @@ int block_invalid_unit(vector<string> valid_unit, string dist_unit)
 	return 1;
 }
 
-double conv_meter(double val1, string dist_unit)			//メートル変換関数
+double conv_meter(double val1, string dist_unit)
 {
 	double mts;
 
@@ -45,14 +45,14 @@ int main()
 	double val1{ 0 };
 	double max{ 0 };
 	double min{ 0 };
-	double total{ 0 };			//値の合計
-	double number{ 0 };			//値の個数
-	double mts;					//メートル表記
+	double total{ 0 };
+	double number{ 0 };
+	double mts;
 	char empty;
 	constexpr char end_mark = '|';
 	string dist_unit{};
 	string user_prompt = { "Enter valid a floating point number and distance unit, " + string{end_mark} +" to exit: --->" };
-	vector <double> values;
+	vector <double> values;			//データを格納するvectorを定義
 
 	cout << user_prompt << '\n';
 	while (cin >> empty && empty != end_mark) {
@@ -97,7 +97,7 @@ int main()
 		<< total << "m" << " が値の合計\n\n";
 
 	cout << "入力された値を出力する\n--->";
-	for (double value : values)
+	for (double value : values)				//範囲for文で出力
 		cout << '\t' << value << "meter\n";
 }
 
