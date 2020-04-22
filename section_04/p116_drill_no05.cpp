@@ -1,10 +1,10 @@
 #include "../../std_lib_facilities.h"
 
-double CM_M_CONV_RATIO = 1.0 / 100;			//近似値の範囲を設定
+double approximation_value = 1.0 / 100;			//近似値の範囲を設定
 
-string near_equal(double val1, double val2,double CM_M_CONV_RATIO)			//2つの値の差が0.01未満の場合出力を変える関数
+string near_equal(double val1, double val2,double approximation_value)			//2つの値の差が0.01未満の場合出力を変える関数
 {
-	if (abs(val1 - val2) < CM_M_CONV_RATIO)			//abs関数(p1156)      //val1とval2の差の絶対値が1.0/100より小さい場合
+	if (abs(val1 - val2) < approximation_value)			//abs関数(p1156)		//val1とval2の差の絶対値が1.0/100より小さい場合
 		return string{ "the numbers are almost equal\n" };
 	else			//それ以外の場合
 		return string{ "" };
@@ -25,7 +25,7 @@ int main()
 			if (val1 < val2) {
 				cout << "the smallest value is: " << val1 << '\n'
 					<< "the largest value is : " << val2 << '\n'
-					<< near_equal(val1, val2, CM_M_CONV_RATIO);			//関数使用
+					<< near_equal(val1, val2, approximation_value);			//関数使用
 			}
 			else if (val1 == val2) {
 				cout << "the numbers are equal\n";
@@ -33,7 +33,7 @@ int main()
 			else {
 				cout << "the smallest value is: " << val2 << '\n'
 					<< "the largest value is : " << val1 << '\n'
-					<< near_equal(val1, val2, CM_M_CONV_RATIO);			//関数使用
+					<< near_equal(val1, val2, approximation_value);			//関数使用
 			}
 		}
 		else if (cin >> empty && empty == end_mark) {
