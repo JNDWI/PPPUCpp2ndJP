@@ -36,5 +36,6 @@ int main()
 	'|'が入力されたらプログラムを終了する．⏎
 ２	"the smallest value is: "に続いて小さいほうの数字をかき出し，"the larger value is: "に続いて大きいほうの値を書き出すように変更する．⏎
 ３	2つの数字が等しい場合に（のみ），"the numbers are equal"行をかき出すように変更する．⏎
+
 ４	int の代わりに doubleを使用するように変更する．⏎
 */
