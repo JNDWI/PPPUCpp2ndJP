@@ -16,7 +16,7 @@ string near_equal(double val1, double val2, double approximation_value)
 
 int block_invalid_unit(vector<string> valid_unit, string dist_unit )
 {
-	for (int i = 0; valid_unit.size(); ++i) {
+	for (int i = 0; i < valid_unit.size(); ++i) {
 		if (dist_unit == valid_unit[i])
 			return 0;
 	}
