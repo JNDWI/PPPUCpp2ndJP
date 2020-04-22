@@ -4,7 +4,7 @@ double approximation_value = 1.0 / 100;			//近似値の範囲を設定
 
 string near_equal(double val1, double val2,double approximation_value)			//2つの値の差が0.01未満の場合出力を変える関数
 {
-	if (abs(val1 - val2) < approximation_value)			//abs関数(p1156)		//val1とval2の差の絶対値が1.0/100より小さい場合
+	if (abs(val1 - val2) < approximation_value)			//abs関数(p1156)  val1とval2の差の絶対値が1.0/100より小さい場合
 		return string{ "the numbers are almost equal\n" };
 	else			//それ以外の場合
 		return string{ "" };
