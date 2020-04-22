@@ -23,7 +23,7 @@ int block_invalid_unit(vector<string> valid_unit, string dist_unit)
 	return 1;
 }
 
-double conv_meter(double val1, string dist_unit)			//メートル変換関数
+double conv_meter(double val1, string dist_unit)
 {
 	double mts;
 
@@ -45,9 +45,9 @@ int main()
 	double val1{ 0 };
 	double max{ 0 };
 	double min{ 0 };
-	double total{ 0 };			//値の合計
-	double number{ 0 };			//値の個数
-	double mts;					//メートル表記
+	double total{ 0 };
+	double number{ 0 };
+	double mts;
 	char empty;
 	constexpr char end_mark = '|';
 	string dist_unit{};
@@ -115,11 +115,10 @@ int main()
 ７	入力された double　型の値に単位を追加する．つまり，10cm,2.5in,5fn,3.33mなどの値を入力する．単位として受け入れるのは，cm,m,in,fn　の4つであり，
 	換算率を1m == 100cm，1in == 2.54cm,1ft == 12in　とする．単位記号は文字列に読み込む．12 m（数字と単位の間にスペースがある）については，
 	12m　と同等と考えてよい．⏎
-８	単位のない値，または単位の表記が「無効」である値（y,yard,meter,km,gallons　など）を拒否する．
-
+８	単位のない値，または単位の表記が「無効」である値（y,yard,meter,km,gallons　など）を拒否する．⏎
 ９	（最小値と最大値に加えて）入力された値の合計と入力された値の個数を追跡する．ループが終了したら，最小値，最大値，値の個数，値の合計を出力する．
-	合計を管理するには，その合計に使用する単位を決定しなければならないことに注意．ここではメートルを使用する．
-１０	入力された値をすべて（メートルに変換した上で）vector に格納する．最後に，それらの値を書き出す．
+	合計を管理するには，その合計に使用する単位を決定しなければならないことに注意．ここではメートルを使用する．⏎
+１０	入力された値をすべて（メートルに変換した上で）vector に格納する．最後に，それらの値を書き出す．⏎
 
 １１	vector から値をかき出す前に，それらを（昇順で）並び替える．⏎
 */
