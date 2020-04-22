@@ -97,7 +97,7 @@ int main()
 		<< total << "m" << " が値の合計\n\n";
 
 	cout << "入力された値を昇順で並び替える\n--->";
-	sort(values);
+	sort(values);					//sortで昇順に並び替える
 	for (double value : values)
 		cout << '\t' << value << "meter\n";
 }
