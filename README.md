@@ -7,6 +7,7 @@
 各セクションの問題の解答です，//コメントである程度補足をしています．ページ番号_問題タイプ_ナンバー.cppでファイル名を付けています．<br>
 載せている解答は下記の海外の方が作成した解答を一部参考にしています．<br>1 https://github.com/0p3r4t4/PPPUCPP2nd<br>2 https://github.com/Jtaim/Programming-Principles-and-Practice-Using-Cpp
 ### Library<br>
-http://www.stroustrup.com/Programming/PPP2code/std_lib_facilities.h
+http://www.stroustrup.com/Programming/PPP2code/std_lib_facilities.h<br>
+#include "../../std_lib_facilities.h"と記述していますが，これはあくまで私の環境に合わせたpathなので使う際は自分でpath指定してください．
 ### 最後に<br>
 コードにmissや，改善点がありましたらPull requestsしてくれるとためになります．
