@@ -6,7 +6,7 @@
 #### 使用したツール
 -[Microsoft Visual Studio Community 2017](https://my.visualstudio.com/Downloads?q=visual%20studio%202017&wt.mc_id=o~msft~vscom~older-downloads)はWindowsでこの問題を解く際に使ったIDEである。 <br>
 -[Eclipse IDE](https://www.eclipse.org/downloads/)は無料のIDEである。Linux上で問題を解く際に使用した。 <br>
--[std_lib_facilities.h](https://www.stroustrup.com/)は本書で使用されているライブラリである。 <br>
+-[std_lib_facilities.h](https://raw.githubusercontent.com/nanonashy/Principle-and-Practice-Using-Cpp-Second-Edition-JP/master/std_lib_facilities.h)は本書で使用されているライブラリである。 <br>
 #### ノート
 このレポジトリには本書に記載されている問題の解答を載せている。 <br>
 セクション(章)ごとに振り分けている。問題の解答は`.cpp`でアップロードしてある。ファイル名は`ページ番号_問題タイプ 番号.cpp`となっている。 <br>
