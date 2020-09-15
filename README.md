@@ -22,3 +22,6 @@ Bjarne Stroustrup 著 <br>
 セクション(章)ごとに振り分けている。問題の解答は`.cpp`でアップロードしてある。ファイル名は`ページ番号_問題タイプ 番号.cpp`となっている。 <br>
 `std_lib_facilities.h`は自分の環境に合わせて、正しいPathを指定してください。 このライブラリは著者の公式サイトからダウンロード可能だったが、現在リンクが移動したのでダウンロードリンクの所在が分かってない。<br>
 https://www.stroustrup.com/Programming/PPP2code/std_lib_facilities.h 元リンク
+***
+####更新が遅れています
+nanonashyは大学受験に追われているので更新ができずにいます。
