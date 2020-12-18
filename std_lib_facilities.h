@@ -19,10 +19,12 @@
 	Revised November 25 2013: remove support for pre-C++11 compilers, use C++11: <chrono>
 	Revised November 28 2013: add a few container algorithms
 	Revised June 8 2014: added #ifndef to workaround Microsoft C++11 weakness
+	Revised Febrary 2 2015: randint() can now be seeded (see exercise 5.13).
+	Revised June 15 for defaultfloat hack for older GCCs
 */
 
 #ifndef H112
-#define H112 251113L
+#define H112 020215L
 
 
 #include<iostream>
@@ -43,11 +45,16 @@
 #include<stdexcept>
 
 //------------------------------------------------------------------------------
-
-
+#if __GNUC__ && __GNUC__ < 5
+inline ios_base& defaultfloat(ios_base& b)	// to augment fixed and scientific as in C++11
+{
+	b.setf(ios_base::fmtflags(0), ios_base::floatfield);
+	return b;
+}
+#endif
 //------------------------------------------------------------------------------
 
-typedef long Unicode;
+using Unicode = long;
 
 //------------------------------------------------------------------------------
 
@@ -208,9 +215,15 @@ template<class R, class A> R narrow_cast(const A& a)
 
 // random number generators. See 24.7.
 
+default_random_engine& get_rand()
+{
+	static default_random_engine ran;
+	return ran;
+};
 
+void seed_randint(int s) { get_rand().seed(s); }
 
-inline int randint(int min, int max) { static default_random_engine ran; return uniform_int_distribution<>{min, max}(ran); }
+inline int randint(int min, int max) {  return uniform_int_distribution<>{min, max}(get_rand()); }
 
 inline int randint(int max) { return randint(0, max); }
 
