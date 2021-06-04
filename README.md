@@ -1,7 +1,7 @@
 ## C++によるプログラミングの原則と実践　Bjarne,Stroustrup 著 <br> Principle-and-Practice-Using-Cpp-Second-Edition-JP
 ***
 #### 本を購入する
-[Amazonの商品リンク](https://www.amazon.co.jp/C-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E5%8E%9F%E5%89%87%E3%81%A8%E5%AE%9F%E8%B7%B5-Bjarne-Stroustrup/dp/4048930516)
+[C++によるプログラミングの原則と実践　Bjarne,Stroustrup 著](https://www.amazon.co.jp/C-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E5%8E%9F%E5%89%87%E3%81%A8%E5%AE%9F%E8%B7%B5-Bjarne-Stroustrup/dp/4048930516)
 ***
 #### この本について
 「C++によるプログラミングの原則と実践」は初心者向けのC++の参考書です。<br> 総ページは約1200ページ。<br>
@@ -14,7 +14,7 @@ Bjarne Stroustrup 著 <br>
 ***
 #### 使用したツール
 -[Microsoft Visual Studio Community 2017](https://my.visualstudio.com/Downloads?q=visual%20studio%202017&wt.mc_id=o~msft~vscom~older-downloads)はWindowsでこの問題を解く際に使ったIDE。 <br>
--[Eclipse IDE](https://www.eclipse.org/downloads/)は無料のIDEである。Linux上で問題を解く際に使用。 <br>
+-[Eclipse IDE](https://www.eclipse.org/downloads/)は無料のIDEである。Linux上で問題を解く際に。 <br>
 -[std_lib_facilities.h](https://raw.githubusercontent.com/nanonashy/Principle-and-Practice-Using-Cpp-Second-Edition-JP/master/std_lib_facilities.h)は本書で使用されているライブラリ。 <br>
 ***
 #### ノート
