@@ -15,14 +15,10 @@ Bjarne Stroustrup 著 <br>
 #### 使用したツール
 -[Microsoft Visual Studio Community 2017](https://my.visualstudio.com/Downloads?q=visual%20studio%202017&wt.mc_id=o~msft~vscom~older-downloads)はWindowsでこの問題を解く際に使ったIDE。 <br>
 -[Eclipse IDE](https://www.eclipse.org/downloads/)は無料のIDEである。Linux上で問題を解く際に。 <br>
--[std_lib_facilities.h](https://raw.githubusercontent.com/nanonashy/Principle-and-Practice-Using-Cpp-Second-Edition-JP/master/std_lib_facilities.h)は本書で使用されているライブラリ。 <br>
+-[std_lib_facilities.h](https://www.stroustrup.com/Programming/PPP2code/std_lib_facilities.h)は本書で使用されているライブラリ。 <br>
 ***
 #### ノート
 このレポジトリには本書に記載されている問題の解答を載せています。 <br>
 セクション(章)ごとに振り分けている。問題の解答は`.cpp`でアップロードしてあります。ファイル名は`ページ番号_問題タイプ 番号.cpp`となっています。 <br>
-`std_lib_facilities.h`は自分の環境に合わせて、正しいPathを指定してください。 このライブラリは著者の公式サイトからダウンロード可能だったが、現在リンクが移動したのでダウンロードリンクの所在が分かっていません。<br>
-2020/09/15 リンクの復旧を確認
-https://www.stroustrup.com/Programming/PPP2code/std_lib_facilities.h
+`std_lib_facilities.h`は自分の環境に合わせて、正しいPathを指定してください。
 ***
-#### 更新が遅れています <br>
-nanonashyは大学受験に追われているので更新ができずにいます。
