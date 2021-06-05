@@ -4,7 +4,8 @@
 [C++によるプログラミングの原則と実践　Bjarne,Stroustrup 著](https://www.amazon.co.jp/C-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E5%8E%9F%E5%89%87%E3%81%A8%E5%AE%9F%E8%B7%B5-Bjarne-Stroustrup/dp/4048930516)
 ***
 #### この本について
-「C++によるプログラミングの原則と実践」は初心者向けのC++の参考書です。<br> 総ページは約1200ページ。<br>
+C++の設計者Bjarne Stroustrupが、プロとして恥ずかしくないレベルのプログラマーを目指す学生、C++を本格的に学びたい人を対象に書き下ろした究極の入門書です。また、C++日本語対応に関する解説を独自に追加しています。<br>
+※本書は『Programming: Principles and Practice Using C++(2nd Edition)』の翻訳書です。 <br>
 Bjarne Stroustrup 著 <br>
 江添 亮 監修 <br>
 株式会社クイープ／遠藤美代子 訳 <br>
