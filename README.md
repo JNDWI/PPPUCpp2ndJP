@@ -18,7 +18,7 @@ Bjarne Stroustrup 著 <br>
 株式会社クイープ／遠藤美代子 訳 <br>
 ***
 #### 使用したツール
--[Microsoft Visual Studio Community 2017](https://my.visualstudio.com/Downloads?q=visual%20studio%202017&wt.mc_id=o~msft~vscom~older-downloads)はWindowsでこの問題を解く際に使ったIDE。 <br>
+-[Microsoft Visual Studio Community 2019](https://visualstudio.microsoft.com/ja/downloads/)はWindowsでこの問題を解く際に使ったIDE。 <br>
 -[Eclipse IDE](https://www.eclipse.org/downloads/)は無料のIDEである。Linux上で問題を解く際に。 <br>
 -[std_lib_facilities.h](https://www.stroustrup.com/Programming/PPP2code/std_lib_facilities.h)は本書で使用されているライブラリ。 <br>
 ***
