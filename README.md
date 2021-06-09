@@ -1,5 +1,8 @@
 ## C++によるプログラミングの原則と実践　Bjarne,Stroustrup 著 <br> Principle-and-Practice-Using-Cpp-Second-Edition-JP
 ***
+#### 詳細
+本書に記載されている**TRY THIS**, **ドリル**, **練習問題** の解答をチャプターごとに分けて載せています。<br>
+解答のファイル名は基本**章.問題タイプ.問題番号.cpp**となっています。
 #### 本を購入する
 [C++によるプログラミングの原則と実践　Bjarne,Stroustrup 著](https://www.amazon.co.jp/C-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E5%8E%9F%E5%89%87%E3%81%A8%E5%AE%9F%E8%B7%B5-Bjarne-Stroustrup/dp/4048930516)
 ***
@@ -18,8 +21,4 @@ Bjarne Stroustrup 著 <br>
 -[Eclipse IDE](https://www.eclipse.org/downloads/)は無料のIDEである。Linux上で問題を解く際に。 <br>
 -[std_lib_facilities.h](https://www.stroustrup.com/Programming/PPP2code/std_lib_facilities.h)は本書で使用されているライブラリ。 <br>
 ***
-#### ノート
-このレポジトリには本書に記載されている問題の解答を載せています。 <br>
-セクション(章)ごとに振り分けている。問題の解答は`.cpp`でアップロードしてあります。ファイル名は`ページ番号_問題タイプ 番号.cpp`となっています。 <br>
-`std_lib_facilities.h`は自分の環境に合わせて、正しいPathを指定してください。
 ***
