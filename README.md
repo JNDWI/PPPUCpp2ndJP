@@ -19,6 +19,6 @@ Bjarne Stroustrup 著 <br>
 ***
 #### 使用したツール
 -[Microsoft Visual Studio Community 2019](https://visualstudio.microsoft.com/ja/downloads/)はWindowsでこの問題を解く際に使ったIDE。 <br>
--[Eclipse IDE](https://www.eclipse.org/downloads/)は無料のIDEである。Linux上で問題を解く際に。 <br>
--[std_lib_facilities.h](https://www.stroustrup.com/Programming/PPP2code/std_lib_facilities.h)は本書で使用されているライブラリ。 <br>
+-[Eclipse Foundation Eclipse IDE](https://www.eclipse.org/downloads/)は無料のIDEである。Linux上で問題を解く際に。 <br>
+-[ライブラリ](https://github.com/BjarneStroustrup/Programming-_Principles_and_Practice_Using_Cpp} ライブラリ集
 ***
