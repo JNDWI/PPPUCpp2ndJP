@@ -18,6 +18,6 @@ Bjarne Stroustrup 著 <br>
 株式会社クイープ／遠藤美代子 訳 <br>
 ***
 #### 使用したツール
--[Microsoft Visual Studio Community 2019](https://visualstudio.microsoft.com/ja/downloads/)はWindowsでこの問題を解く際に使ったIDE。 <br>
--[Eclipse Foundation Eclipse IDE](https://www.eclipse.org/downloads/)は無料のIDEである。Linux上で問題を解く際に。 <br>
+-[Microsoft Visual Studio Community 2019](https://visualstudio.microsoft.com/ja/downloads/)はWindowsでこの問題を解く際に使用したIDE。 <br>
+-[Eclipse Foundation Eclipse IDE](https://www.eclipse.org/downloads/)はLinux上で問題を解く際に使用したIDE。 <br>
 ***
