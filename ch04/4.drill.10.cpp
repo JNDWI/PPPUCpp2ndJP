@@ -26,9 +26,8 @@ double conv_into_m(double value, string unit)
 		return value * CM_PER_IN / CM_PER_M;
 	else if (unit == "ft")
 		return value * IN_PER_FT * CM_PER_IN / CM_PER_M;
-	else if (unit == "hyde")
+	else
 		return value * M_PER_HYDE;
-	else;
 }
 
 double min(vector<double> a)

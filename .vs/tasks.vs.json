@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "タスク-4.drill.11",
+      "appliesTo": "ch04/4.drill.11.cpp",
+      "type": "launch"
+    }
+  ]
+}

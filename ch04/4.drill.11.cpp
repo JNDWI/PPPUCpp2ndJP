@@ -26,9 +26,8 @@ double conv_into_m(double value, string unit)
 		return value * CM_PER_IN / CM_PER_M;
 	else if (unit == "ft")
 		return value * IN_PER_FT * CM_PER_IN / CM_PER_M;
-	else if (unit == "hyde")
+	else	// (unit == "hyde")
 		return value * M_PER_HYDE;
-	else;
 }
 
 double min(vector<double> a)
@@ -54,6 +53,7 @@ double max(vector<double> b)
 	}
 	return val;
 }
+
 int main()
 {
 	vector<double> values{};
@@ -65,6 +65,7 @@ int main()
 	double sum{ 0 };
 	int count{ 0 };
 
+	cout << "Input unit(cm, m, in, ft, hyde) following double value." << endl;
 	while (cin >> input >> unit) {
 		if (is_legal_unit(unit, legal_units) == true) {
 			values.push_back(conv_into_m(input, unit));
@@ -83,18 +84,19 @@ int main()
 				cout << '\t' << input << unit << '(' << conv_into_m(input, unit) << "m)" << endl;
 		}
 		else
-			cout << "無効な単位です." << endl;
+			cout << "Invalid Value." << endl;
 	}
 
-	cout << "最小値: " << smallest << 'm' << endl
-		<< "最大値: " << largest << 'm' << endl
-		<< "値の個数: " << count << endl
-		<< "値の合計: " << sum << 'm' << endl;
+	cout << "Minimum Value: " << smallest << 'm' << endl
+		<< "Maximum Value: " << largest << 'm' << endl
+		<< "Number of Values: " << count << endl
+		<< "Total of Values: " << sum << 'm' << endl;
 
-	cout << "入力された値（整理済み）: " << endl;
+	cout << "Inputed Values(Sorted): " << endl;
 	sort(legal_meters);
 	for (double value : legal_meters)
 		cout << '\t' << value << 'm' << endl;
+	keep_window_open ();
 
 	return 0;
 }
