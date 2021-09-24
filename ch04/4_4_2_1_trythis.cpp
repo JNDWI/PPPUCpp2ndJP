@@ -1,9 +1,7 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
-    char character = { 'a' };
+int main() {
+    char character = {'a'};
 
     std::cout << "char\t"
               << "int" << std::endl;

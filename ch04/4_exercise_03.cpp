@@ -1,11 +1,9 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     vector<double> distances = {};
-    double distance{ 0 };
-    double sum{ 0 };
+    double distance{0};
+    double sum{0};
 
     while (std::cin >> distance) {
         sum += distance;

@@ -1,9 +1,7 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
-    std::string operation = { " " };
+int main() {
+    std::string operation = {" "};
     double a = 0;
     double b = 0;
 

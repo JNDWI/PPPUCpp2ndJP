@@ -8,25 +8,17 @@
 
 #include "../include/std_lib_facilities.h"
 
-constexpr int frame_width{ 2 };
+constexpr int frame_width{2};
 
-int
-area(int length, int width)
-{
+int area(int length, int width) {
     if (length <= 0 || width <= 0)
         error("non-positive area() argument");
     return length * width;
 }
 
-int
-framed_area(int x, int y)
-{
-    return area(x - frame_width, y - frame_width);
-}
+int framed_area(int x, int y) { return area(x - frame_width, y - frame_width); }
 
-int
-f(int x, int y, int z)
-{
+int f(int x, int y, int z) {
     int area1 = area(x, y);
     if (area1 <= 0)
         error("non-positive area");
@@ -47,12 +39,10 @@ f(int x, int y, int z)
     return 0;
 }
 
-int
-main()
-{
-    int x{ 0 };
-    int y{ 0 };
-    int z{ 0 };
+int main() {
+    int x{0};
+    int y{0};
+    int z{0};
 
     std::cout << "３つの整数値を入力してください...\n>> ";
 

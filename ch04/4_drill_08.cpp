@@ -1,14 +1,12 @@
 #include "../include/std_lib_facilities.h"
 
-constexpr double CM_PER_M{ 100.0 };
-constexpr double CM_PER_IN{ 2.54 };
-constexpr double IN_PER_FT{ 12.0 };
-constexpr double M_PER_HYDE{ 1.61 };
-const vector<std::string> legal_units{ "cm", "m", "in", "ft", "hyde" };
+constexpr double CM_PER_M{100.0};
+constexpr double CM_PER_IN{2.54};
+constexpr double IN_PER_FT{12.0};
+constexpr double M_PER_HYDE{1.61};
+const vector<std::string> legal_units{"cm", "m", "in", "ft", "hyde"};
 
-bool
-is_legal_unit(const std::string& a, vector<std::string> legalUnits)
-{
+bool is_legal_unit(const std::string &a, vector<std::string> legalUnits) {
     for (unsigned int i = 0; i < legalUnits.size(); ++i) {
         if (a == legalUnits[i])
             return true;
@@ -19,9 +17,7 @@ is_legal_unit(const std::string& a, vector<std::string> legalUnits)
 }
 
 // string b には有効な単位のみ渡すこと。
-double
-conv_into_m(double a, const std::string& b)
-{
+double conv_into_m(double a, const std::string &b) {
     if (b == "m")
         return a;
     else if (b == "cm")
@@ -34,9 +30,7 @@ conv_into_m(double a, const std::string& b)
         return a * M_PER_HYDE;
 }
 
-double
-min(vector<double> a)
-{
+double min(vector<double> a) {
     double val = a[0];
 
     for (unsigned int i = 0; i < a.size(); ++i) {
@@ -48,9 +42,7 @@ min(vector<double> a)
     return val;
 }
 
-double
-max(vector<double> b)
-{
+double max(vector<double> b) {
     double val = b[0];
 
     for (unsigned int i = 0; i < b.size(); ++i) {
@@ -62,11 +54,9 @@ max(vector<double> b)
     return val;
 }
 
-int
-main()
-{
+int main() {
     vector<double> numbers{};
-    double input{ 0 };
+    double input{0};
     std::string unit;
 
     while (std::cin >> input >> unit) {

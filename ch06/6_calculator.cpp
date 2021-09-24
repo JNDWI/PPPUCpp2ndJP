@@ -5,16 +5,13 @@
 
 #include "../include/std_lib_facilities.h"
 
-class Token
-{
+class Token {
   public:
     char kind;
     double value;
 };
 
-int
-main()
-{
+int main() {
     std::cout << "Please enter expression (we can handle + and -): ";
     int lval = 0;
     int rval;

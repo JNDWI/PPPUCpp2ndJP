@@ -1,5 +1,6 @@
-# We'll use defaults from the Mozilla style, but with 4 columns indentation.
-BasedOnStyle: Mozilla
+BasedOnStyle: LLVM
 IndentWidth: 4
----
 Language: Cpp
+TabWidth:        4
+UseCRLF:         false
+UseTab:          Never

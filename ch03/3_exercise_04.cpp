@@ -1,8 +1,6 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     int val1 = 0;
     int val2 = 0;
     std::cout << "2つの整数値を入力してください。: ";

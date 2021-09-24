@@ -1,8 +1,6 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     double val1 = 0;
     double val2 = 0;
     std::cout << "2つの浮遊小数点数値を入力してください。: ";

@@ -4,11 +4,9 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     vector<int> input;
-    int element{ 0 };
+    int element{0};
 
     std::cout << "正の整数の最頻値を検出するプログラムです。一連の正の整数値を"
                  "入力してください...\n>> ";
@@ -32,8 +30,8 @@ main()
             }
         }
 
-        int max{ 0 };
-        int target_element{ 0 };
+        int max{0};
+        int target_element{0};
 
         for (unsigned int j = 0; j < times.size(); ++j) {
             if (times[j] > max) {

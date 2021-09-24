@@ -1,13 +1,11 @@
 #include "../include/std_lib_facilities.h"
 
-int MIN{ 1 };
-int MAX{ 100 };
-int COUNT{ 0 };
+int MIN{1};
+int MAX{100};
+int COUNT{0};
 
-bool
-guess(int min, int max)
-{
-    char y_or_n{ ' ' };
+bool guess(int min, int max) {
+    char y_or_n{' '};
 
     if (max - min == 1) {
         ++COUNT;
@@ -52,9 +50,7 @@ guess(int min, int max)
     return false;
 }
 
-int
-main()
-{
+int main() {
     std::cout << "1から100までの数字を一つ思い浮かべてください。\n";
 
     while (!guess(MIN, MAX))

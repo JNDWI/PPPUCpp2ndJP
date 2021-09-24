@@ -11,10 +11,8 @@ vector<std::string> names;
 vector<unsigned int> scores;
 vector<std::string> target_names;
 
-bool
-scrutinize_names(std::string input_name, vector<std::string> name_list)
-{
-    bool result{ true };
+bool scrutinize_names(std::string input_name, vector<std::string> name_list) {
+    bool result{true};
 
     for (unsigned int i = 0; i < name_list.size(); ++i) {
         if (name_list[i] == input_name)
@@ -24,25 +22,21 @@ scrutinize_names(std::string input_name, vector<std::string> name_list)
     return result;
 }
 
-void
-get_name(unsigned int score)
-{
+void get_name(unsigned int score) {
     for (unsigned int k = 0; k < scores.size(); ++k) {
         if (score == scores[k])
             target_names.push_back(names[k]);
     }
 }
 
-int
-main()
-{
-    std::string name{ "NoName" };
-    unsigned int score{ 0 };
-    bool quit{ false };
+int main() {
+    std::string name{"NoName"};
+    unsigned int score{0};
+    bool quit{false};
 
     std::cout
-      << "名前とスコアを入力し、出力するプログラムです。\n名前に "
-         "\"NoName\"、又はスコアを0と入力するとプログラムは終了します。\n>> ";
+        << "名前とスコアを入力し、出力するプログラムです。\n名前に "
+           "\"NoName\"、又はスコアを0と入力するとプログラムは終了します。\n>> ";
 
     while (!quit && (cin >> name >> score)) {
         if (name == "NoName" || score == 0) {
@@ -50,9 +44,9 @@ main()
             quit = true;
         } else {
             if (!scrutinize_names(name, names)) {
-                std::cout
-                  << "ERROR: " << name
-                  << " はすでに使用されています。\nデータ入力を終了します...\n";
+                std::cout << "ERROR: " << name
+                          << " はすでに使用されています。\nデータ入力を終了しま"
+                             "す...\n";
                 quit = true;
             } else {
                 names.push_back(name);
@@ -62,7 +56,7 @@ main()
         }
     }
 
-    unsigned int target_score{ 0 };
+    unsigned int target_score{0};
 
     if (names.empty()) {
         std::cout << "入力されたデータはありませんでした。\n";

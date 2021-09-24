@@ -8,8 +8,7 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-area(int length, int width)
+int area(int length, int width)
 // 四角形の面積を計算する
 // 事前条件: length と width は正
 // 事後条件: 面積を表す正の値を返す
@@ -22,21 +21,19 @@ area(int length, int width)
     return a;
 }
 
-int
-main()
-try {
+int main() try {
     int length;
     int width;
 
     std::cout
-      << "四角形の面積を計算します。縦と横の長さを入力してください...\n>> ";
+        << "四角形の面積を計算します。縦と横の長さを入力してください...\n>> ";
 
     while (cin >> length >> width) {
         std::cout << "面積は " << area(length, width) << '\n';
     }
 
     return 0;
-} catch (runtime_error& e) {
+} catch (runtime_error &e) {
     std::cout << "Error: " << e.what() << '\n';
     return 1;
 } catch (...) {

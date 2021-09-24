@@ -17,11 +17,7 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-try {
-    error("hogehoge ...");
-} catch (out_of_range& e) {
+int main() try { error("hogehoge ..."); } catch (out_of_range &e) {
     std::cerr << "エラー: " << e.what() << '\n';
 }
 

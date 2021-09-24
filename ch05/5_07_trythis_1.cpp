@@ -4,9 +4,7 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     vector<double> temps;
 
     for (double temp; cin >> temp;)

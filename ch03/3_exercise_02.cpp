@@ -1,8 +1,6 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     double mile_input = 0;
     std::cout << "キロメートル単位に変換したいマイル数を入力してください。: ";
     std::cin >> mile_input;

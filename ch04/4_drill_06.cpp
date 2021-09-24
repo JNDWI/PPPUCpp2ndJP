@@ -1,8 +1,6 @@
 #include "../include/std_lib_facilities.h"
 
-double
-min(vector<double> a)
-{
+double min(vector<double> a) {
     double val = a[0];
 
     for (unsigned int i = 0; i < a.size();
@@ -16,9 +14,7 @@ min(vector<double> a)
     return val;
 }
 
-double
-max(vector<double> b)
-{
+double max(vector<double> b) {
     double val = b[0];
 
     for (unsigned int i = 0; i < b.size();
@@ -32,11 +28,9 @@ max(vector<double> b)
     return val;
 }
 
-int
-main()
-{
+int main() {
     vector<double> numbers{};
-    double input{ 0 };
+    double input{0};
 
     while (std::cin >> input) {
         numbers.push_back(input);

@@ -1,13 +1,11 @@
 #include "../include/std_lib_facilities.h"
 
-constexpr double cm_per_m{ 100.0 };
-constexpr double cm_per_in{ 2.54 };
-constexpr double in_per_ft{ 12.0 };
+constexpr double cm_per_m{100.0};
+constexpr double cm_per_in{2.54};
+constexpr double in_per_ft{12.0};
 // const vector<std::string> legal_units{ "cm","m","in","ft" };
 
-double
-min(vector<double> a)
-{
+double min(vector<double> a) {
     double val = a[0];
 
     for (unsigned int i = 0; i < a.size(); ++i) {
@@ -19,9 +17,7 @@ min(vector<double> a)
     return val;
 }
 
-double
-max(vector<double> b)
-{
+double max(vector<double> b) {
     double val = b[0];
 
     for (unsigned int i = 0; i < b.size(); ++i) {
@@ -33,12 +29,10 @@ max(vector<double> b)
     return val;
 }
 
-int
-main()
-{
+int main() {
     vector<double> numbers{};
-    double input{ 0 };
-    std::string unit{ " " };
+    double input{0};
+    std::string unit{" "};
 
     while (cin >> input >> unit) {
         numbers.push_back(input);

@@ -11,18 +11,16 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
-    double a{ 0 };
-    double b{ 0 };
-    double c{ 0 };
-    double D{ 0 }; // 判別式
+int main() {
+    double a{0};
+    double b{0};
+    double c{0};
+    double D{0}; // 判別式
 
     std::cout << "二次方程式の定数 a, b, c を入力してください...\n>> ";
 
-    double x1{ 0 };
-    double x2{ 0 };
+    double x1{0};
+    double x2{0};
     while (std::cin >> a >> b >> c) {
         if (a != 0) {
             D = b * b - 4 * a * c;

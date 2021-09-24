@@ -1,8 +1,6 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     int uno;
     int alignas;
     int double = 0;

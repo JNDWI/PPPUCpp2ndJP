@@ -4,12 +4,9 @@
 // コメント：
 //  使用したコンパイラーと出力されたエラーログは下に記載してある。
 
-int
-area(int length, int width);
+int area(int length, int width);
 
-int
-main()
-{
+int main() {
     int s1 = area(7;    // エラー: ) がない
     int s2 = area(7)    // エラー: ; がない
     Int s3 = area(7);   // エラー: Int は型ではない
@@ -48,8 +45,8 @@ arguments, but 1 was provided int area(int length, int width);
 5_3_1_trythis.cpp:53:4: error: expected '}'
  */
 ^
-  //  5_3_1_trythis.cpp:10:1: note: to match this '{'
-  //  {
-  //  ^
-  //  1 warning and 6 errors generated.
-  * /
+    //  5_3_1_trythis.cpp:10:1: note: to match this '{'
+    //  {
+    //  ^
+    //  1 warning and 6 errors generated.
+    * /

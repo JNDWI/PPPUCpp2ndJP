@@ -1,10 +1,8 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
-    double val1{ 0 };
-    double val2{ 0 };
+int main() {
+    double val1{0};
+    double val2{0};
 
     while (std::cin >> val1 >> val2) {
         if (val1 < val2)

@@ -5,12 +5,10 @@
 
 #include "../include/std_lib_facilities.h"
 
-constexpr double max_temp{ 9941 };    // 太陽の表面温度
-constexpr double min_temp{ -459.67 }; // 絶対零度
+constexpr double max_temp{9941};    // 太陽の表面温度
+constexpr double min_temp{-459.67}; // 絶対零度
 
-int
-main()
-{
+int main() {
     vector<double> temps;
 
     for (double temp; cin >> temp;)

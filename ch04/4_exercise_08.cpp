@@ -16,15 +16,13 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     bool exit = false;
     std::string input;
-    int total_grain{ 0 };
-    int add_grain{ 1 };
-    int times{ 0 };
-    int request_grain{ 0 };
+    int total_grain{0};
+    int add_grain{1};
+    int times{0};
+    int request_grain{0};
 
     cout << "グレイン数を入力してください...(quitで終了します)\n"
          << "times\t\tadded grain\t\ttotal grain\n>> ";

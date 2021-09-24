@@ -1,9 +1,7 @@
 #include "../include/std_lib_facilities.h"
 
-int
-square(int x)
-{
-    int result{ 0 };
+int square(int x) {
+    int result{0};
 
     for (int i = 1; i <= x; ++i)
         result += x;
@@ -11,9 +9,7 @@ square(int x)
     return result;
 }
 
-int
-main()
-{
+int main() {
     std::cout << "Number\tSquare\n";
     for (int i = 1; i <= 100; ++i)
         std::cout << i << '\t' << square(i) << std::endl;

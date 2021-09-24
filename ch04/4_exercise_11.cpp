@@ -13,11 +13,9 @@
 
 #include "../include/std_lib_facilities.h"
 
-bool
-check_primes(vector<int> primes, int number)
-{
-    bool is_prime{ true };
-    unsigned int i{ 0 };
+bool check_primes(vector<int> primes, int number) {
+    bool is_prime{true};
+    unsigned int i{0};
 
     while (is_prime && i < primes.size()) {
         if (number % primes[i] == 0)
@@ -27,12 +25,10 @@ check_primes(vector<int> primes, int number)
     return is_prime;
 }
 
-int
-main()
-{
+int main() {
     vector<int> primes;
     primes.push_back(2);
-    int limit{ 100 };
+    int limit{100};
 
     for (int i = 3; i <= limit; ++i) {
         if (check_primes(primes, i))

@@ -3,12 +3,10 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     vector<std::string> input;
     std::string element;
-    bool quit{ false };
+    bool quit{false};
 
     std::cout << "string型の一連の値から最小値, 最大値, "
                  "最頻値を検出します。文字列リテラルを入力してください...\n("
@@ -39,8 +37,8 @@ main()
             }
         }
 
-        int mod{ 0 };
-        unsigned int mod_element{ 0 };
+        int mod{0};
+        unsigned int mod_element{0};
         for (unsigned int j = 0; j < times.size(); ++j) {
             if (times[j] > mod) {
                 mod = times[j];
@@ -51,7 +49,7 @@ main()
                   << times[mod_element] << " 回でした。\n";
 
         std::string min;
-        unsigned int min_element{ 0 };
+        unsigned int min_element{0};
         min = values[0];
         for (unsigned int k = 0; k < values.size(); ++k) {
             if (min > values[k]) {
@@ -63,7 +61,7 @@ main()
                   << times[min_element] << " 回でした。\n";
 
         std::string max;
-        unsigned int max_element{ 0 };
+        unsigned int max_element{0};
         max = values[0];
         for (unsigned int l = 0; l < values.size(); ++l) {
             if (max < values[l]) {

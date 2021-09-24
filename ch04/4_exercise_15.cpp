@@ -3,11 +3,9 @@
 
 #include "../include/std_lib_facilities.h"
 
-bool
-check_primes(vector<int> primes, int number)
-{
-    bool is_prime{ true };
-    unsigned int i{ 0 };
+bool check_primes(vector<int> primes, int number) {
+    bool is_prime{true};
+    unsigned int i{0};
 
     while (is_prime && i < primes.size()) {
         if (number % primes[i] == 0)
@@ -17,14 +15,12 @@ check_primes(vector<int> primes, int number)
     return is_prime;
 }
 
-int
-main()
-{
+int main() {
     vector<int> primes;
     primes.push_back(2);
-    int limit{ 0 };
-    int count{ 1 };
-    int target_number{ 3 };
+    int limit{0};
+    int count{1};
+    int target_number{3};
 
     std::cout << "検出したい素数の個数を入力してください...\n>>";
     std::cin >> limit;

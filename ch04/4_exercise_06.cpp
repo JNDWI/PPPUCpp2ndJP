@@ -13,13 +13,11 @@
 
 #include "../include/std_lib_facilities.h"
 
-const vector<std::string> names = { "zero", "one", "two",   "three", "four",
-                                    "five", "six", "seven", "eight", "nine" };
+const vector<std::string> names = {"zero", "one", "two",   "three", "four",
+                                   "five", "six", "seven", "eight", "nine"};
 
-int
-get_number(string name)
-{
-    int result{ -1 };
+int get_number(string name) {
+    int result{-1};
     for (unsigned int x = 0; x < names.size(); ++x) {
         if (names[x] == name)
             result = x;
@@ -28,12 +26,10 @@ get_number(string name)
     return result;
 }
 
-int
-main()
-{
-    int number{ 0 };
-    std::string name{ "" };
-    bool quit{ false };
+int main() {
+    int number{0};
+    std::string name{""};
+    bool quit{false};
 
     std::cout << "1桁の整数値を入力して整数の英語名を取得、\n"
               << "又は1桁の整数の英語名を入力してアラビア数字を取得します。\n"

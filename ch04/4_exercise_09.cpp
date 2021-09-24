@@ -19,13 +19,11 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
-    int rice{ 0 };
-    int rice_add{ 1 };
-    double drice{ 0 };
-    double drice_add{ 1 };
+int main() {
+    int rice{0};
+    int rice_add{1};
+    double drice{0};
+    double drice_add{1};
 
     for (int square = 1; square <= 64; ++square) {
         rice += rice_add;

@@ -1,13 +1,11 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     // 定義 & 初期化
-    std::string first_name = { " " };
+    std::string first_name = {" "};
     int age = -1;
-    std::string friend_name = { " " };
-    char friend_gender = { '0' };
+    std::string friend_name = {" "};
+    char friend_gender = {'0'};
 
     // プロンプト
     std::cout << "Enter the name of the person you want to write to (followed "
@@ -21,7 +19,7 @@ main()
     std::cout << "Enter the name of a friend: "; //　友達の名前を入力
     std::cin >> friend_name;
     std::cout
-      << "Enter friend's sex (m for male, f for female): "; // 友達の性別を入力
+        << "Enter friend's sex (m for male, f for female): "; // 友達の性別を入力
     std::cin >> friend_gender;
 
     // 出力

@@ -5,10 +5,8 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
-    int limit{ 100 };
+int main() {
+    int limit{100};
     vector<int> numbers(limit + 1);
 
     for (int i = 2; i <= limit; ++i) {

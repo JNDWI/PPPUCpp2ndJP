@@ -1,8 +1,6 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     double d = 0;
     while (std::cin >> d) { // 数字を入力している間は、以下の文を繰り返し実行
         int i = d;  // double から int への変換を試みる

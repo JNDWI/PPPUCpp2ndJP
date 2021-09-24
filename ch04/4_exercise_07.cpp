@@ -13,15 +13,13 @@
 
 #include "../include/std_lib_facilities.h"
 
-const vector<std::string> names = { "zero", "one", "two",   "three", "four",
-                                    "five", "six", "seven", "eight", "nine" };
+const vector<std::string> names = {"zero", "one", "two",   "three", "four",
+                                   "five", "six", "seven", "eight", "nine"};
 
-int
-generate_number()
-{
+int generate_number() {
     std::string name;
-    int number{ 0 };
-    int output{ -1 };
+    int number{0};
+    int output{-1};
 
     if (std::cin >> number) {
         if (number < 0 || number >= int(names.size()))
@@ -46,13 +44,11 @@ generate_number()
     return output;
 }
 
-int
-main()
-{
+int main() {
     bool quit = false;
-    double val1{ 0 };
-    double val2{ 0 };
-    char op{ ' ' };
+    double val1{0};
+    double val2{0};
+    char op{' '};
 
     std::cout << "1桁電卓プログラムです。\n"
               << "一桁の整数(0~9)又はその英語名を演算子(+ - * "
@@ -78,27 +74,27 @@ main()
                 std::cout << "もう一度やり直してください。\n>> ";
             } else {
                 switch (op) {
-                    case '+':
-                        std::cout << "The sum of " << val1 << " and " << val2
-                                  << " is " << val1 + val2 << '\n';
-                        break;
-                    case '-':
-                        std::cout << "The difference of " << val1 << " and "
-                                  << val2 << " is " << val1 - val2 << '\n';
-                        break;
-                    case '*':
-                        std::cout << "The product of " << val1 << " and "
-                                  << val2 << " is " << val1 * val2 << '\n';
-                        break;
-                    case '/':
-                        if (val2 != 0)
-                            std::cout << "The division of " << val1 << " and "
-                                      << val2 << " is " << val1 / val2 << '\n';
-                        else
-                            std::cout << "ERROR: Division by zero\n";
-                        break;
-                    default:
-                        break;
+                case '+':
+                    std::cout << "The sum of " << val1 << " and " << val2
+                              << " is " << val1 + val2 << '\n';
+                    break;
+                case '-':
+                    std::cout << "The difference of " << val1 << " and " << val2
+                              << " is " << val1 - val2 << '\n';
+                    break;
+                case '*':
+                    std::cout << "The product of " << val1 << " and " << val2
+                              << " is " << val1 * val2 << '\n';
+                    break;
+                case '/':
+                    if (val2 != 0)
+                        std::cout << "The division of " << val1 << " and "
+                                  << val2 << " is " << val1 / val2 << '\n';
+                    else
+                        std::cout << "ERROR: Division by zero\n";
+                    break;
+                default:
+                    break;
                 }
                 std::cout << ">> ";
             }

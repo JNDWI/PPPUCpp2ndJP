@@ -41,9 +41,7 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-try {
+int main() try {
     /*
      *  1: Cout << "Success!\n";
      *
@@ -331,7 +329,7 @@ try {
 
     return 0;
 
-} catch (exception& e) {
+} catch (exception &e) {
     cerr << "error: " << e.what() << '\n';
     return 1;
 } catch (...) {

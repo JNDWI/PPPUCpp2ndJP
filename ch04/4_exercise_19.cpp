@@ -11,10 +11,8 @@
 vector<std::string> names;
 vector<unsigned int> scores;
 
-bool
-scrutinize_names(std::string input_name, vector<std::string> name_list)
-{
-    bool result{ true };
+bool scrutinize_names(std::string input_name, vector<std::string> name_list) {
+    bool result{true};
 
     for (unsigned int i = 0; i < name_list.size(); ++i) {
         if (name_list[i] == input_name)
@@ -24,16 +22,14 @@ scrutinize_names(std::string input_name, vector<std::string> name_list)
     return result;
 }
 
-int
-main()
-{
-    std::string name{ "NoName" };
-    unsigned int score{ 0 };
-    bool quit{ false };
+int main() {
+    std::string name{"NoName"};
+    unsigned int score{0};
+    bool quit{false};
 
     std::cout
-      << "名前とスコアを入力し、出力するプログラムです。\n名前に "
-         "\"NoName\"、又はスコアを0と入力するとプログラムは終了します。\n>> ";
+        << "名前とスコアを入力し、出力するプログラムです。\n名前に "
+           "\"NoName\"、又はスコアを0と入力するとプログラムは終了します。\n>> ";
 
     while (!quit && (cin >> name >> score)) {
         if (name == "NoName" || score == 0) {

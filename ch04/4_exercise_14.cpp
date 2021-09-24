@@ -4,10 +4,8 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
-    int limit{ 100 };
+int main() {
+    int limit{100};
 
     std::cout << ">> ";
     std::cin >> limit;

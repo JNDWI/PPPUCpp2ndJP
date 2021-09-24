@@ -1,11 +1,9 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
-    std::string a = { " " };
-    std::string b = { " " };
-    std::string c = { " " };
+int main() {
+    std::string a = {" "};
+    std::string b = {" "};
+    std::string c = {" "};
     std::string min, mid, max;
 
     std::cout << "3つの文字列を入力してください。: ";

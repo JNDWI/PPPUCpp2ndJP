@@ -21,14 +21,12 @@
 #include <ctime>
 #include <random>
 
-const vector<std::string> hand_list = { "グー", "チョキ", "パー" };
+const vector<std::string> hand_list = {"グー", "チョキ", "パー"};
 
-int
-get_user_hand()
-{
+int get_user_hand() {
     std::string input;
     int number_input;
-    int output{ -1 };
+    int output{-1};
 
     if (std::cin >> number_input) {
         if (0 <= number_input && number_input <= 2)
@@ -48,10 +46,8 @@ get_user_hand()
     return output;
 }
 
-std::string
-cpu_hand_conv(unsigned int hand_number)
-{
-    int output{ 0 };
+std::string cpu_hand_conv(unsigned int hand_number) {
+    int output{0};
 
     for (unsigned int i = 0; i < hand_list.size(); ++i) {
         if (hand_number == i)
@@ -60,17 +56,15 @@ cpu_hand_conv(unsigned int hand_number)
     return hand_list[output];
 }
 
-int
-main()
-{
+int main() {
     bool quit = false;
-    int user_hand{ -1 };
+    int user_hand{-1};
     int cpu_hand;
 
     std::cout
-      << "コンピューターとじゃんけんするプログラムです。\n「グー(0), "
-         "チョキ(1), パー(2)」から一つ選び、文字列またはそれに"
-      << "対応する0から2の整数を入力してください。quit で終了します...\n>> ";
+        << "コンピューターとじゃんけんするプログラムです。\n「グー(0), "
+           "チョキ(1), パー(2)」から一つ選び、文字列またはそれに"
+        << "対応する0から2の整数を入力してください。quit で終了します...\n>> ";
 
     srand(unsigned(time(nullptr)));
     while (!quit) {

@@ -4,18 +4,16 @@
 
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     std::cout << "char\tint\n";
 
-    for (char small = { 'a' }; small <= 'z'; ++small)
+    for (char small = {'a'}; small <= 'z'; ++small)
         std::cout << small << '\t' << int(small) << std::endl;
 
-    for (char capital = { 'A' }; capital <= 'Z'; ++capital)
+    for (char capital = {'A'}; capital <= 'Z'; ++capital)
         std::cout << capital << '\t' << int(capital) << std::endl;
 
-    for (char number = { '0' }; number <= '9'; ++number)
+    for (char number = {'0'}; number <= '9'; ++number)
         std::cout << number << '\t' << int(number) << std::endl;
 
     return 0;

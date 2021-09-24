@@ -1,8 +1,6 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     std::cout << "Please enter your first_name and age\n";
     string first_name = "???";
     double age = -1;

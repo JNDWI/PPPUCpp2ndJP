@@ -1,9 +1,7 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
-    std::string number = { " " };
+int main() {
+    std::string number = {" "};
 
     std::cout << "一桁の数字を英語のスペルで入力してください。(ex:zero): ";
     std::cin >> number;

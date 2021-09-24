@@ -1,8 +1,6 @@
 #include "../include/std_lib_facilities.h"
 
-int
-main()
-{
+int main() {
     std::cout << "整数値を入力してください: ";
     int n;
     std::cin >> n;
