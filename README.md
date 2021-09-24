@@ -1,29 +1,63 @@
-## C++によるプログラミングの原則と実践　Bjarne,Stroustrup 著 <br> Principle-and-Practice-Using-Cpp-Second-Edition-JP
-***
+﻿# C++によるプログラミングの原則と実践
 
-#### 本の詳細
-C\++の設計者Bjarne Stroustrupが、プロとして恥ずかしくないレベルのプログラマーを目指す学生、C\++を本格的に学びたい人を対象に書き下ろした究極の入門書です。<br>
-また、C\++日本語対応に関する解説を独自に追加しています。<br>
-※本書は『Programming: Principles and Practice Using C++(2nd Edition)』の翻訳書です。 <br>
-Bjarne Stroustrup 著 <br>
-江添 亮 監修 <br>
-株式会社クイープ／遠藤美代子 訳 <br><br>
-[**Amazonリンク**](https://www.amazon.co.jp/C-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E5%8E%9F%E5%89%87%E3%81%A8%E5%AE%9F%E8%B7%B5-Bjarne-Stroustrup/dp/4048930516)
-***
-#### 詳細
-本書に記載されている **`TRY THIS`, `ドリル`, `練習問題`** の解答をチャプターごとに分けて載せています。<br>
+[<img src="https://64.media.tumblr.com/cfa36cd69bfd32f29777b78fbeac8748/tumblr_inline_obfh31Gbpj1u8j60o_1280.jpg" width="200px">](https://asciidwango.jp/post/148488491965/c-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E5%8E%9F%E5%89%87%E3%81%A8%E5%AE%9F%E8%B7%B5)<br>
+書籍『[C++によるプログラミングの原則と実践](https://asciidwango.jp/post/148488491965/c-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E5%8E%9F%E5%89%87%E3%81%A8%E5%AE%9F%E8%B7%B5)』
+で取り扱っている問題（Try this、ドリル、練習問題）の解答です。
 
+## ディレクトリ構成
+|ディレクトリ名|説明|
+|:--		 |:--|
+|ch02|2章で取り扱った問題の解答|
+|ch03|3章で取り扱った問題の解答|
+|・・・|・・・|
+|images|Markdown等に使用した画像|
+|include|本書で使用されるヘッダーファイル等|
 
-***
-#### 何故
-本書に記載されているドリルや練習問題の私なりの解答をシェアするためにこのレポジトリを作成しました。<br>
-私自身この本の問題の解法に困った際、ネット上で解答を見つけるのに苦労したので、同じ境遇に遭ってしまった人の参考になれれればうれしく思います。<br>
-そして私自身の本の進捗を記録するためにこのレポジトリを残しておくことにします。
-***
+## コンパイルと実行
 
-#### 使用したツール
--[Microsoft Visual Studio Community 2019](https://visualstudio.microsoft.com/ja/downloads/) <br>
--[Eclipse Foundation Eclipse IDE](https://www.eclipse.org/downloads/) <br>
--[Windows Subsystem for Linux]()<br>
--[MinGW]()
+#### LLVM Clang
+
+```shell
+# Linux
+$ clang++ -o example1 ch02/2_drill_2_helloWorld.cpp
+$ ./example1
+
+# Windows
+$ clang++ -o example1.exe .\ch02\2_drill_2_helloWorld.cpp
+$ .\example1.exe
+```
+
+#### GCC
+
+```shell
+# Linux
+$ g++ -o example2 ch02/2_drill_2_helloWorld.cpp
+$ ./example2
+
+# Windows
+$ g++ -o example2.exe .\ch02\2_drill_2_helloWorld.cpp
+$ .\example2.exe
+```
+
+#### MSVC cl.exe (Windows)
+
+```shell
+# Develop Powershell for VS 2019
+$ cl /source-charset:utf-8 .\ch02\2_drill_2_helloWorld.cpp
+$ .\2_drill_2_helloWorld.exe
+```
+
+## ノート
+
+- エンコードは UTF-8、改行コードは LF に統一してある。
+- 改行に `std::endl` と `\n` を使用しているが、あとから後者に統一してある。
+- `std_lib_facilities.h` に `using namespace std`は含まれているが `std::`は敢えて書いてある。
+
+## 参考
+
+- [cpprefjp - C++日本語リファレンス](https://cpprefjp.github.io)
+- [BjarneStroustrup/Programming-_Principles_and_Practice_Using_Cpp](https://github.com/BjarneStroustrup/Programming-_Principles_and_Practice_Using_Cpp)
+- [bewuethr/stroustrup-ppp](https://github.com/bewuethr/stroustrup-ppp)
+- [0p3r4t4/PPPUCPP2nd](https://github.com/0p3r4t4/PPPUCPP2nd)
+
 ***
