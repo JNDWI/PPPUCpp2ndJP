@@ -28,5 +28,6 @@ int main() {
 
     cout << "High temperature: " << high_temp << '\n';
     cout << "Low Temperature: " << low_temp << '\n';
+
     cout << "Average temperature: " << sum / temps.size() << '\n';
 }

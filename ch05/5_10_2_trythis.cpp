@@ -15,7 +15,7 @@ int area(int length, int width)
 {
     if (length <= 0 || width <= 0)
         throw runtime_error("area() pre-condition");
-    int a = length * width;
+    int a = length * width
     if (a <= 0)
         throw runtime_error("area() post-condition");
     return a;
@@ -37,6 +37,6 @@ int main() try {
     std::cout << "Error: " << e.what() << '\n';
     return 1;
 } catch (...) {
-    std::cout << "Unknown Error...\n";
-    return 2;
+        std::cout << "Unknown Error...\n";
+        return 2;
 }
